@@ -8,8 +8,8 @@ export default function Search({ updateInfo }) {
   let [city, setCity] = useState("");
   let [error, setError] = useState(false);
 
+  const key = import.meta.env.VITE_OPENWEATHER_KEY;
   const endPoint = "https://api.openweathermap.org/data/2.5/weather";
-  const key = "a2b8ffa3a34c5cab924af7f05c6fca32";
 
   const handleInputChange = (e) => {
     setCity(e.target.value);
