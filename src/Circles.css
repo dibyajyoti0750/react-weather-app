@@ -1,0 +1,68 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Large Circle - top left */
+.large {
+  width: 40vw;
+  height: 40vw;
+  max-width: 36rem;
+  max-height: 36rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, #a64eff, #4b0082);
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+}
+
+/* Medium Circle - bottom right */
+.medium {
+  width: 25vw;
+  height: 25vw;
+  max-width: 23rem;
+  max-height: 23rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, #de3163, #8b1c3b);
+  position: absolute;
+  bottom: -8vw;
+  right: -10vw;
+}
+
+/* Small Circle - top right */
+.small {
+  width: 10vw;
+  height: 10vw;
+  max-width: 8rem;
+  max-height: 8rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff200, #ffae00);
+  position: absolute;
+  top: 20vh;
+  right: 15vw;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+  .large {
+    width: 70vw;
+    height: 70vw;
+    top: -20vw;
+    left: -20vw;
+  }
+
+  .medium {
+    width: 50vw;
+    height: 50vw;
+    bottom: -20vw;
+    right: -20vw;
+  }
+
+  .small {
+    width: 16vw;
+    height: 16vw;
+    top: 30vh;
+    right: 0vw;
+  }
+}
