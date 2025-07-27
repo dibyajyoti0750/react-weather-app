@@ -81,11 +81,7 @@ export default function Search({ updateInfo }) {
       <Box
         sx={{
           mx: "auto",
-          pt: {
-            xs: 2.2,
-            xm: 2.2,
-            md: 10,
-          },
+          pt: 12,
           width: "90%",
           maxWidth: "600px",
         }}
